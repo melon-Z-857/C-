@@ -45,6 +45,42 @@ void test06() {
 	MyPrintf(a, sizeof(a) / sizeof(a[0]));
 }
 
+void test07() {
+	MyPrintf(a, sizeof(a) / sizeof(a[0]));
+	PartSort2(a, 0, sizeof(a) / sizeof(a[0]) - 1);
+	MyPrintf(a, sizeof(a) / sizeof(a[0]));
+}
+
+void test08() {
+	MyPrintf(a, sizeof(a) / sizeof(a[0]));
+	PartSort3(a, 0, sizeof(a) / sizeof(a[0]) - 1);
+	MyPrintf(a, sizeof(a) / sizeof(a[0]));
+}
+
+void test09() {
+	MyPrintf(a, sizeof(a) / sizeof(a[0]));
+	QuickSort(a, 0, sizeof(a) / sizeof(a[0]) - 1);
+	MyPrintf(a, sizeof(a) / sizeof(a[0]));
+}
+
+void test010() {
+	MyPrintf(a, sizeof(a) / sizeof(a[0]));
+	QuickSortNonR(a, 0, sizeof(a) / sizeof(a[0]) - 1);
+	MyPrintf(a, sizeof(a) / sizeof(a[0]));
+}
+
+void test11() {
+	MyPrintf(a, sizeof(a) / sizeof(a[0]));
+	MergeSort(a, sizeof(a) / sizeof(a[0]));
+	MyPrintf(a, sizeof(a) / sizeof(a[0]));
+}
+
+void test12() {
+	MyPrintf(a, sizeof(a) / sizeof(a[0]));
+	CountSort(a, sizeof(a) / sizeof(a[0]));
+	MyPrintf(a, sizeof(a) / sizeof(a[0]));
+}
+
 int main() {
 	//test01();
 
@@ -56,7 +92,19 @@ int main() {
 
 	//test05();
 
-	test06();
+	//test06();
+
+	//test07();
+
+	//test08();
+
+	//test09();
+
+	//test010();
+
+	//test11();
+
+	test12();
 
 	return 0;
 }

@@ -130,7 +130,7 @@
     <ClInclude Include="Queue.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\240716_BinaryTree\240716_BinaryTree\Queue.cpp" />
+    <ClCompile Include="Queue.cpp" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
