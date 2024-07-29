@@ -7,5 +7,7 @@ int main() {
 
 	cout << d1 - d2 << endl;
 
+	cout << d1._year << endl;
+
 	return 0;
 }

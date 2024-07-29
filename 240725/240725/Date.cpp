@@ -39,7 +39,8 @@ Date& Date::operator+=(int day) {
 }
 
 Date Date::operator+(int day) {
-	Date tmp = (*this += day);
+	Date tmp = *this;
+	tmp += day;
 	return tmp;
 }
 
@@ -57,7 +58,8 @@ Date& Date::operator-=(int day) {
 }
 
 Date Date::operator-(int day) {
-	Date tmp = (*this -= day);
+	Date tmp = *this;
+	tmp -= day;
 	return tmp;
 }
 
