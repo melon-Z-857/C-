@@ -29,7 +29,9 @@ namespace zxy
 			int parent = (child - 1) / 2;
 			while (child > 0) {
 				if (com(a[parent], a[child])) {
-					Swap(&a[child], &a[parent]);
+					auto tmp = &a[child];
+					&a[child] = &a[parent];
+					&a[parent] = tmp;
 					child = parent;
 					parent = (child - 1) / 2;
 				}
@@ -46,7 +48,10 @@ namespace zxy
 					child++;
 				}
 				if (com(a[parent], a[child])) {
-					Swap(&a[child], &a[parent]);
+					auto tmp = &a[child];
+					&a[child] = &a[parent];
+					&a[parent] = tmp;
+					child = parent;
 					parent = child;
 					child = parent * 2 + 1;
 				}
